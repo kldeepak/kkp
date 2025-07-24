@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects - KK Projects | Premium Plotted Developments in Hyderabad</title>
+    <meta name="description" content="Explore KK Projects' premium plotted developments in Hyderabad. RERA approved projects with modern amenities, strategic locations, and excellent ROI.">
+    <meta name="keywords" content="projects by KK Projects, plots in hyderabad, gated community plots, RERA approved plots, real estate projects hyderabad">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<body>
+    <!-- WhatsApp Chat Widget -->
+    <div class="whatsapp-chat">
+        <a href="https://wa.me/919999999999?text=Hi%20KK%20Projects,%20I'm%20interested%20in%20your%20land%20development%20projects" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="KK Projects" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="projects.html" data-bs-toggle="dropdown">Projects</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="projects.html">All Projects</a></li>
+                                <li><a class="dropdown-item" href="projects.html?location=hyderabad">Hyderabad</a></li>
+                                <li><a class="dropdown-item" href="projects.html?location=outskirts">Outskirts</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="testimonials.html">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blogs.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="careers.html">Careers</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-actions">
+                        <a href="tel:+919999999999" class="btn btn-primary me-2">
+                            <i class="fas fa-phone"></i> Call Now
+                        </a>
+                        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                            Enquire Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-bg" style="background-image: url('assets/images/projects-hero.jpg')">
+            <div class="page-header-overlay">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            <nav aria-label="breadcrumb" class="mb-4">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                                    <li class="breadcrumb-item active text-white">Projects</li>
+                                </ol>
+                            </nav>
+                            <h1 class="page-title">Our <span class="text-accent">Projects</span></h1>
+                            <p class="page-subtitle">Discover premium plotted developments designed for smart investors and future homeowners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="filter-group">
+                        <label class="filter-label">Search Projects</label>
+                        <input type="text" id="projectSearch" class="form-control" placeholder="Search by name or location...">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-3">
+                    <div class="filter-group">
+                        <label class="filter-label">Status</label>
+                        <select id="statusFilter" class="form-control">
+                            <option value="">All Status</option>
+                            <option value="ongoing">Ongoing</option>
+                            <option value="ready">Ready to Move</option>
+                            <option value="upcoming">Upcoming</option>
+                            <option value="sold-out">Sold Out</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-3">
+                    <div class="filter-group">
+                        <label class="filter-label">Location</label>
+                        <select id="locationFilter" class="form-control">
+                            <option value="">All Locations</option>
+                            <option value="shadnagar">Shadnagar</option>
+                            <option value="kompally">Kompally</option>
+                            <option value="shankarpally">Shankarpally</option>
+                            <option value="tukkuguda">Tukkuguda</option>
+                            <option value="maheshwaram">Maheshwaram</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="filter-group">
+                        <label class="filter-label">Price Range</label>
+                        <select id="priceFilter" class="form-control">
+                            <option value="">All Prices</option>
+                            <option value="0-20">₹0 - ₹20 Lakhs</option>
+                            <option value="20-40">₹20 - ₹40 Lakhs</option>
+                            <option value="40-60">₹40 - ₹60 Lakhs</option>
+                            <option value="60-100">₹60 Lakhs - ₹1 Crore</option>
+                            <option value="100+">Above ₹1 Crore</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-3">
+                    <div class="filter-group">
+                        <label class="filter-label">Sort By</label>
+                        <select id="sortFilter" class="form-control">
+                            <option value="featured">Featured</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="area-small">Area: Small to Large</option>
+                            <option value="area-large">Area: Large to Small</option>
+                            <option value="newest">Newest First</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12">
+                    <div class="results-info">
+                        <span id="resultsCount">Showing 6 of 6 projects</span>
+                        <div class="view-toggle">
+                            <button class="btn btn-outline-primary btn-sm active" id="gridView">
+                                <i class="fas fa-th"></i> Grid
+                            </button>
+                            <button class="btn btn-outline-primary btn-sm" id="listView">
+                                <i class="fas fa-list"></i> List
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-section py-5">
+        <div class="container">
+            <div class="row" id="projectsContainer">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" 
+                     data-category="ongoing" 
+                     data-location="shadnagar" 
+                     data-price="25" 
+                     data-area="200"
+                     data-title="Green Valley Plots">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project1.jpg" alt="Green Valley Plots" class="img-fluid">
+                            <div class="project-badge">RERA Approved</div>
+                            <div class="project-actions-overlay">
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#galleryModal" data-project="green-valley">
+                                    <i class="fas fa-images"></i>
+                                </button>
+                                <button class="btn btn-light btn-sm" onclick="shareProject('Green Valley Plots', window.location.href)">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                                <button class="btn btn-light btn-sm" data-bs-toggle="tooltip" title="Add to Wishlist">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Green Valley Plots</h4>
+                            <p class="project-location"><i class="fas fa-map-marker-alt"></i> Shadnagar, Hyderabad</p>
+                            <div class="project-features">
+                                <span><i class="fas fa-ruler"></i> 200-500 sq.yds</span>
+                                <span><i class="fas fa-rupee-sign"></i> ₹25 Lakhs onwards</span>
+                            </div>
+                            <div class="project-amenities">
+                                <span class="amenity">Gated Community</span>
+                                <span class="amenity">24/7 Security</span>
+                                <span class="amenity">Water Supply</span>
+                                <span class="amenity">Club House</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <small>Total Plots</small>
+                                    <strong>150</strong>
+                                </div>
+                                <div class="stat">
+                                    <small>Available</small>
+                                    <strong>87</strong>
+                                </div>
+                                <div class="stat">
+                                    <small>RERA ID</small>
+                                    <strong>P52100001234</strong>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="project-details.html?id=green-valley" class="btn btn-outline-primary">View Details</a>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#enquiryModal">Enquire Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" 
+                     data-category="ready" 
+                     data-location="kompally" 
+                     data-price="18" 
+                     data-area="150"
+                     data-title="Royal Gardens">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project2.jpg" alt="Royal Gardens" class="img-fluid">
+                            <div class="project-badge ready">Ready to Move</div>
+                            <div class="project-actions-overlay">
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#galleryModal" data-project="royal-gardens">
+                                    <i class="fas fa-images"></i>
+                                </button>
+                                <button class="btn btn-light btn-sm" onclick="shareProject('Royal Gardens', window.location.href)">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                                <button class="btn btn-light btn-sm" data-bs-toggle="tooltip" title="Add to Wishlist">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Royal Gardens</h4>
+                            <p class="project-location"><i class="fas fa-map-marker-alt"></i> Kompally, Hyderabad</p>
+                            <div class="project-features">
+                                <span><i class="fas fa-ruler"></i> 150-300 sq.yds</span>
+                                <span><i class="fas fa-rupee-sign"></i> ₹18 Lakhs onwards</span>
+                            </div>
+                            <div class="project-amenities">
+                                <span class="amenity">Park</span>
+                                <span class="amenity">Club House</span>
+                                <span class="amenity">Wide Roads</span>
+                                <span class="amenity">Children's Play Area</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <small>Total Plots</small>
+                                    <strong>200</strong>
+                                </div>
+                                <div class="stat">
+                                    <small>Available</small>
+                                    <strong>45</strong>
+                                </div>
+                                <div class="stat">
+                                    <small>RERA ID</small>
+                                    <strong>P52100001235</strong>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="project-details.html?id=royal-gardens" class="btn btn-outline-primary">View Details</a>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#enquiryModal">Enquire Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" 
+                     data-category="upcoming" 
+                     data-location="shankarpally" 
+                     data-price="35" 
+                     data-area="300"
+                     data-title="Elite Enclave">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project3.jpg" alt="Elite Enclave" class="img-fluid">
+                            <div class="project-badge upcoming">Pre-Launch</div>
+                            <div class="project-actions-overlay">
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#galleryModal" data-project="elite-enclave">
+                                    <i class="fas fa-images"></i>
+                                </button>
+                                <button class="btn btn-light btn-sm" onclick="shareProject('Elite Enclave', window.location.href)">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                                <button class="btn btn-light btn-sm" data-bs-toggle="tooltip" title="Add to Wishlist">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Elite Enclave</h4>
+                            <p class="project-location"><i class="fas fa-map-marker-alt"></i> Shankarpally, Hyderabad</p>
+                            <div class="project-features">
+                                <span><i class="fas fa-ruler"></i> 300-800 sq.yds</span>
+                                <span><i class="fas fa-rupee-sign"></i> ₹35 Lakhs onwards</span>
+                            </div>
+                            <div class="project-amenities">
+                                <span class="amenity">Premium Location</span>
+                                <span class="amenity">Investment Grade</span>
+                                <span class="amenity">High ROI</span>
+                                <span class="amenity">Modern Infrastructure</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <small>Total Plots</small>
+                                    <strong>120</strong>
+                                </div>
+                                <div class="stat">
+                                    <small>Available</small>
+                                    <strong>120</strong>
+                                </div>
+                                <div class="stat">
+                                    <small>Launch Date</small>
+                                    <strong>Q2 2025</strong>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="project-details.html?id=elite-enclave" class="btn btn-outline-primary">View Details</a>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#enquiryModal">Register Interest</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" 
+                     data-category="ongoing" 
+                     data-location="tukkuguda" 
+                     data-price="30" 
+                     data-area="250"
+                     data-title="Sunrise Heights">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project4.jpg" alt="Sunrise Heights" class="img-fluid">
+                            <div class="project-badge">RERA Approved</div>
+                            <div class="project-actions-overlay">
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#galleryModal" data-project="sunrise-heights">
+                                    <i class="fas fa-images"></i>
+                                </button>
+                                <button class="btn btn-light btn-sm" onclick="shareProject('Sunrise Heights', window.location.href)">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                                <button class="btn btn-light btn-sm" data-bs-toggle="tooltip" title="Add to Wishlist">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Sunrise Heights</h4>
+                            <p class="project-location"><i class="fas fa-map-marker-alt"></i> Tukkuguda, Hyderabad</p>
+                            <div class="project-features">
+                                <span><i class="fas fa-ruler"></i> 250-600 sq.yds</span>
+                                <span><i class="fas fa-rupee-sign"></i> ₹30 Lakhs onwards</span>
+                            </div>
+                            <div class="project-amenities">
+                                <span class="amenity">Near Airport</span>
+                                <span class="amenity">IT Hub Proximity</span>
+                                <span class="amenity">Metro Connectivity</span>
+                                <span class="amenity">Shopping Mall</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <small>Total Plots</small>
+                                    <strong>180</strong>
+                                </div>
+                                <div class="stat">
+                                    <small>Available</small>
+                                    <strong>92</strong>
+                                </div>
+                                <div class="stat">
+                                    <small>RERA ID</small>
+                                    <strong>P52100001236</strong>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="project-details.html?id=sunrise-heights" class="btn btn-outline-primary">View Details</a>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#enquiryModal">Enquire Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" 
+                     data-category="sold-out" 
+                     data-location="maheshwaram" 
+                     data-price="22" 
+                     data-area="200"
+                     data-title="Paradise County">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project5.jpg" alt="Paradise County" class="img-fluid">
+                            <div class="project-badge sold-out">Sold Out</div>
+                            <div class="project-actions-overlay">
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#galleryModal" data-project="paradise-county">
+                                    <i class="fas fa-images"></i>
+                                </button>
+                                <button class="btn btn-light btn-sm" onclick="shareProject('Paradise County', window.location.href)">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                                <button class="btn btn-light btn-sm" data-bs-toggle="tooltip" title="Add to Wishlist">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Paradise County</h4>
+                            <p class="project-location"><i class="fas fa-map-marker-alt"></i> Maheshwaram, Hyderabad</p>
+                            <div class="project-features">
+                                <span><i class="fas fa-ruler"></i> 200-400 sq.yds</span>
+                                <span><i class="fas fa-rupee-sign"></i> ₹22 Lakhs onwards</span>
+                            </div>
+                            <div class="project-amenities">
+                                <span class="amenity">Fully Developed</span>
+                                <span class="amenity">Great Appreciation</span>
+                                <span class="amenity">Happy Residents</span>
+                                <span class="amenity">Success Story</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <small>Total Plots</small>
+                                    <strong>250</strong>
+                                </div>
+                                <div class="stat">
+                                    <small>Sold</small>
+                                    <strong>250</strong>
+                                </div>
+                                <div class="stat">
+                                    <small>ROI Achieved</small>
+                                    <strong>85%</strong>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="project-details.html?id=paradise-county" class="btn btn-outline-primary">View Details</a>
+                                <button class="btn btn-secondary" disabled>Sold Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" 
+                     data-category="upcoming" 
+                     data-location="shadnagar" 
+                     data-price="28" 
+                     data-area="220"
+                     data-title="Golden Meadows">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project6.jpg" alt="Golden Meadows" class="img-fluid">
+                            <div class="project-badge upcoming">Coming Soon</div>
+                            <div class="project-actions-overlay">
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#galleryModal" data-project="golden-meadows">
+                                    <i class="fas fa-images"></i>
+                                </button>
+                                <button class="btn btn-light btn-sm" onclick="shareProject('Golden Meadows', window.location.href)">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                                <button class="btn btn-light btn-sm" data-bs-toggle="tooltip" title="Add to Wishlist">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Golden Meadows</h4>
+                            <p class="project-location"><i class="fas fa-map-marker-alt"></i> Shadnagar, Hyderabad</p>
+                            <div class="project-features">
+                                <span><i class="fas fa-ruler"></i> 220-550 sq.yds</span>
+                                <span><i class="fas fa-rupee-sign"></i> ₹28 Lakhs onwards</span>
+                            </div>
+                            <div class="project-amenities">
+                                <span class="amenity">Lake View</span>
+                                <span class="amenity">Premium Amenities</span>
+                                <span class="amenity">Golf Course Nearby</span>
+                                <span class="amenity">Luxury Living</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <small>Total Plots</small>
+                                    <strong>160</strong>
+                                </div>
+                                <div class="stat">
+                                    <small>Available</small>
+                                    <strong>160</strong>
+                                </div>
+                                <div class="stat">
+                                    <small>Launch Date</small>
+                                    <strong>Q3 2025</strong>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="project-details.html?id=golden-meadows" class="btn btn-outline-primary">View Details</a>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#enquiryModal">Register Interest</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-4">
+                <button class="btn btn-outline-primary btn-lg" id="loadMoreBtn" style="display: none;">
+                    <i class="fas fa-plus-circle"></i> Load More Projects
+                </button>
+            </div>
+
+            <!-- No Results Message -->
+            <div class="text-center mt-5" id="noResults" style="display: none;">
+                <i class="fas fa-search fa-3x text-muted mb-3"></i>
+                <h4>No Projects Found</h4>
+                <p>Try adjusting your search criteria or filters to find more projects.</p>
+                <button class="btn btn-primary" onclick="clearAllFilters()">Clear All Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h3 class="cta-title">Interested in a Custom Project?</h3>
+                    <p class="cta-subtitle">Let us know your requirements and we'll help you find the perfect investment opportunity.</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <a href="tel:+919999999999" class="btn btn-primary btn-lg me-3">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                    <button class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#customEnquiryModal">
+                        Custom Enquiry
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <img src="assets/images/logo-white.png" alt="KK Projects" class="footer-logo mb-3">
+                        <p>Building Tomorrow's Premium Communities. Smart land investments for future-ready developments in Hyderabad's most promising locations.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h5>Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h5>Services</h5>
+                        <ul class="footer-links">
+                            <li><a href="#">Land Development</a></li>
+                            <li><a href="#">Plot Sales</a></li>
+                            <li><a href="#">NRI Services</a></li>
+                            <li><a href="#">Legal Support</a></li>
+                            <li><a href="#">Investment Consulting</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h5>Contact Info</h5>
+                        <div class="contact-info">
+                            <p><i class="fas fa-map-marker-alt"></i> Plot No. 123, Banjara Hills, Hyderabad - 500034</p>
+                            <p><i class="fas fa-phone"></i> +91 99999 99999</p>
+                            <p><i class="fas fa-envelope"></i> info@kkprojects.com</p>
+                            <p><i class="fas fa-clock"></i> Mon - Sat: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2025 KK Projects. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <ul class="footer-bottom-links">
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                            <li><a href="rera-info.html">RERA Info</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Enquiry Modal -->
+    <div class="modal fade" id="enquiryModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Get In Touch</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="enquiryForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Full Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Phone Number" required>
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-control" required>
+                                <option value="">Select Project Interest</option>
+                                <option value="green-valley">Green Valley Plots</option>
+                                <option value="royal-gardens">Royal Gardens</option>
+                                <option value="elite-enclave">Elite Enclave</option>
+                                <option value="sunrise-heights">Sunrise Heights</option>
+                                <option value="golden-meadows">Golden Meadows</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Enquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Enquiry Modal -->
+    <div class="modal fade" id="customEnquiryModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Custom Project Enquiry</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="customEnquiryForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Full Name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="tel" class="form-control" placeholder="Phone Number" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <select class="form-control" required>
+                                    <option value="">Preferred Location</option>
+                                    <option value="shadnagar">Shadnagar</option>
+                                    <option value="kompally">Kompally</option>
+                                    <option value="shankarpally">Shankarpally</option>
+                                    <option value="tukkuguda">Tukkuguda</option>
+                                    <option value="maheshwaram">Maheshwaram</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <select class="form-control" required>
+                                    <option value="">Budget Range</option>
+                                    <option value="0-20">₹0 - ₹20 Lakhs</option>
+                                    <option value="20-40">₹20 - ₹40 Lakhs</option>
+                                    <option value="40-60">₹40 - ₹60 Lakhs</option>
+                                    <option value="60-100">₹60 Lakhs - ₹1 Crore</option>
+                                    <option value="100+">Above ₹1 Crore</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <select class="form-control" required>
+                                    <option value="">Plot Size Preference</option>
+                                    <option value="100-200">100-200 sq.yds</option>
+                                    <option value="200-300">200-300 sq.yds</option>
+                                    <option value="300-500">300-500 sq.yds</option>
+                                    <option value="500-1000">500-1000 sq.yds</option>
+                                    <option value="1000+">Above 1000 sq.yds</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Special Requirements</label>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="requirement1">
+                                        <label class="form-check-label" for="requirement1">Corner Plot</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="requirement2">
+                                        <label class="form-check-label" for="requirement2">Facing Park</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="requirement3">
+                                        <label class="form-check-label" for="requirement3">Investment Purpose</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Additional Requirements or Comments"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit Custom Enquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    
+    <style>
+        /* Projects page specific styles */
+        .page-header {
+            position: relative;
+            padding: 120px 0 80px;
+        }
+        
+        .page-header-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .page-header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(26, 35, 126, 0.8) 0%, rgba(57, 73, 171, 0.6) 100%);
+            display: flex;
+            align-items: center;
+        }
+        
+        .page-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .page-subtitle {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .filter-group {
+            position: relative;
+        }
+        
+        .filter-label {
+            font-size: 0.9rem;
+            color: var(--gray-color);
+            margin-bottom: 0.5rem;
+            display: block;
+            font-weight: 500;
+        }
+        
+        .results-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-top: 1px solid #dee2e6;
+        }
+        
+        .view-toggle .btn {
+            border-radius: 0;
+        }
+        
+        .view-toggle .btn:first-child {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        
+        .view-toggle .btn:last-child {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        
+        .project-actions-overlay {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .project-card:hover .project-actions-overlay {
+            opacity: 1;
+        }
+        
+        .project-badge.ready {
+            background: var(--success-color);
+            color: white;
+        }
+        
+        .project-badge.upcoming {
+            background: var(--accent-color);
+            color: white;
+        }
+        
+        .project-badge.sold-out {
+            background: var(--gray-color);
+            color: white;
+        }
+        
+        .project-stats {
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem 0;
+            padding: 1rem;
+            background: var(--light-color);
+            border-radius: 5px;
+        }
+        
+        .project-stats .stat {
+            text-align: center;
+            flex: 1;
+        }
+        
+        .project-stats .stat small {
+            display: block;
+            color: var(--gray-color);
+            font-size: 0.8rem;
+        }
+        
+        .project-stats .stat strong {
+            display: block;
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        /* List view styles */
+        .list-view .project-item {
+            margin-bottom: 2rem;
+        }
+        
+        .list-view .project-card {
+            display: flex;
+            flex-direction: row;
+            height: auto;
+        }
+        
+        .list-view .project-image {
+            width: 300px;
+            height: 200px;
+            flex-shrink: 0;
+        }
+        
+        .list-view .project-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .list-view .project-amenities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .list-view .project-actions {
+            margin-top: auto;
+        }
+        
+        @media (max-width: 768px) {
+            .results-info {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .list-view .project-card {
+                flex-direction: column;
+            }
+            
+            .list-view .project-image {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    </style>
+    
+    <script>
+        $(document).ready(function() {
+            // Advanced filtering functionality
+            function filterProjects() {
+                const searchTerm = $('#projectSearch').val().toLowerCase();
+                const statusFilter = $('#statusFilter').val();
+                const locationFilter = $('#locationFilter').val();
+                const priceFilter = $('#priceFilter').val();
+                
+                let visibleCount = 0;
+                
+                $('.project-item').each(function() {
+                    const $item = $(this);
+                    const title = $item.data('title').toLowerCase();
+                    const category = $item.data('category');
+                    const location = $item.data('location');
+                    const price = parseInt($item.data('price'));
+                    
+                    let showItem = true;
+                    
+                    // Search filter
+                    if (searchTerm && !title.includes(searchTerm) && !location.includes(searchTerm)) {
+                        showItem = false;
+                    }
+                    
+                    // Status filter
+                    if (statusFilter && category !== statusFilter) {
+                        showItem = false;
+                    }
+                    
+                    // Location filter
+                    if (locationFilter && location !== locationFilter) {
+                        showItem = false;
+                    }
+                    
+                    // Price filter
+                    if (priceFilter) {
+                        const [min, max] = priceFilter.split('-').map(p => p === '+' ? Infinity : parseInt(p));
+                        if (max && (price < min || price > max)) {
+                            showItem = false;
+                        } else if (!max && price < min) {
+                            showItem = false;
+                        }
+                    }
+                    
+                    if (showItem) {
+                        $item.show();
+                        visibleCount++;
+                    } else {
+                        $item.hide();
+                    }
+                });
+                
+                $('#resultsCount').text(`Showing ${visibleCount} of ${$('.project-item').length} projects`);
+                
+                if (visibleCount === 0) {
+                    $('#noResults').show();
+                } else {
+                    $('#noResults').hide();
+                }
+            }
+            
+            // Bind filter events
+            $('#projectSearch, #statusFilter, #locationFilter, #priceFilter').on('change keyup', filterProjects);
+            
+            // Sort functionality
+            $('#sortFilter').on('change', function() {
+                const sortBy = $(this).val();
+                const $container = $('#projectsContainer');
+                const $items = $('.project-item');
+                
+                $items.sort(function(a, b) {
+                    const $a = $(a);
+                    const $b = $(b);
+                    
+                    switch (sortBy) {
+                        case 'price-low':
+                            return parseInt($a.data('price')) - parseInt($b.data('price'));
+                        case 'price-high':
+                            return parseInt($b.data('price')) - parseInt($a.data('price'));
+                        case 'area-small':
+                            return parseInt($a.data('area')) - parseInt($b.data('area'));
+                        case 'area-large':
+                            return parseInt($b.data('area')) - parseInt($a.data('area'));
+                        case 'newest':
+                            return $b.data('title').localeCompare($a.data('title'));
+                        default:
+                            return 0;
+                    }
+                });
+                
+                $container.html($items);
+            });
+            
+            // View toggle
+            $('#gridView').on('click', function() {
+                $('#projectsContainer').removeClass('list-view');
+                $('.view-toggle .btn').removeClass('active');
+                $(this).addClass('active');
+            });
+            
+            $('#listView').on('click', function() {
+                $('#projectsContainer').addClass('list-view');
+                $('.view-toggle .btn').removeClass('active');
+                $(this).addClass('active');
+            });
+            
+            // Clear all filters function
+            window.clearAllFilters = function() {
+                $('#projectSearch').val('');
+                $('#statusFilter').val('');
+                $('#locationFilter').val('');
+                $('#priceFilter').val('');
+                $('#sortFilter').val('featured');
+                filterProjects();
+            };
+            
+            // Initialize tooltips
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+</html>
