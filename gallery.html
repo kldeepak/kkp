@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - KK Projects | Photos & Videos of Our Premium Developments</title>
+    <meta name="description" content="Explore KK Projects' gallery featuring photos, videos, and virtual tours of our premium plotted developments in Hyderabad. See our completed and ongoing projects.">
+    <meta name="keywords" content="KK Projects gallery, project photos, real estate videos, plot development images, hyderabad projects gallery, virtual tours">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<body>
+    <!-- WhatsApp Chat Widget -->
+    <div class="whatsapp-chat">
+        <a href="https://wa.me/919999999999?text=Hi%20KK%20Projects,%20I'm%20interested%20in%20your%20land%20development%20projects" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="KK Projects" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="projects.html" data-bs-toggle="dropdown">Projects</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="projects.html">All Projects</a></li>
+                                <li><a class="dropdown-item" href="projects.html?location=hyderabad">Hyderabad</a></li>
+                                <li><a class="dropdown-item" href="projects.html?location=outskirts">Outskirts</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="testimonials.html">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blogs.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="careers.html">Careers</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-actions">
+                        <a href="tel:+919999999999" class="btn btn-primary me-2">
+                            <i class="fas fa-phone"></i> Call Now
+                        </a>
+                        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                            Enquire Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-bg" style="background-image: url('assets/images/gallery-hero.jpg')">
+            <div class="page-header-overlay">
+                <div class="container">
+                    <div class="row align-items-center min-vh-100">
+                        <div class="col-lg-8">
+                            <nav aria-label="breadcrumb" class="mb-4">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                                    <li class="breadcrumb-item active text-white">Gallery</li>
+                                </ol>
+                            </nav>
+                            <h1 class="page-title">Project <span class="text-accent">Gallery</span></h1>
+                            <p class="page-subtitle">Explore our premium developments through stunning visuals and immersive experiences</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="gallery-filters py-4 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="filter-tabs">
+                        <button class="filter-btn active" data-filter="all">
+                            <i class="fas fa-th"></i> All Media
+                        </button>
+                        <button class="filter-btn" data-filter="photos">
+                            <i class="fas fa-camera"></i> Photos
+                        </button>
+                        <button class="filter-btn" data-filter="videos">
+                            <i class="fas fa-video"></i> Videos
+                        </button>
+                        <button class="filter-btn" data-filter="360">
+                            <i class="fas fa-globe"></i> 360° Tours
+                        </button>
+                        <button class="filter-btn" data-filter="aerial">
+                            <i class="fas fa-helicopter"></i> Aerial Views
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project-filters">
+                        <select id="projectFilter" class="form-control">
+                            <option value="">All Projects</option>
+                            <option value="green-valley">Green Valley Plots</option>
+                            <option value="sunrise-enclave">Sunrise Enclave</option>
+                            <option value="golden-hills">Golden Hills</option>
+                            <option value="tech-valley">Tech Valley Plots</option>
+                            <option value="paradise-gardens">Paradise Gardens</option>
+                            <option value="royal-estate">Royal Estate</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-section py-5">
+        <div class="container">
+            <div class="gallery-grid" id="galleryContainer">
+                
+                <!-- Photo Items -->
+                <div class="gallery-item" data-type="photos" data-project="green-valley">
+                    <div class="gallery-card">
+                        <img src="assets/images/gallery/project1-1.jpg" alt="Green Valley Plots - Main Entrance" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>Green Valley Plots</h5>
+                                <p>Main Entrance & Gate</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-btn" onclick="openLightbox('assets/images/gallery/project1-1.jpg', 'Green Valley Plots - Main Entrance')">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="shareImage('Green Valley Plots - Main Entrance')">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="downloadImage('assets/images/gallery/project1-1.jpg')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="photos" data-project="green-valley">
+                    <div class="gallery-card">
+                        <img src="assets/images/gallery/project1-2.jpg" alt="Green Valley Plots - Clubhouse" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>Green Valley Plots</h5>
+                                <p>Modern Clubhouse</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-btn" onclick="openLightbox('assets/images/gallery/project1-2.jpg', 'Green Valley Plots - Clubhouse')">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="shareImage('Green Valley Plots - Clubhouse')">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="downloadImage('assets/images/gallery/project1-2.jpg')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="videos" data-project="green-valley">
+                    <div class="gallery-card video-card">
+                        <img src="assets/images/gallery/video-thumb-1.jpg" alt="Green Valley Plots - Project Walkthrough" class="gallery-image">
+                        <div class="video-play-btn" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="dQw4w9WgXcQ">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>Green Valley Plots</h5>
+                                <p>Project Walkthrough</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-btn" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="dQw4w9WgXcQ">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="shareVideo('Green Valley Plots - Project Walkthrough')">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="aerial" data-project="green-valley">
+                    <div class="gallery-card">
+                        <img src="assets/images/gallery/aerial-1.jpg" alt="Green Valley Plots - Aerial View" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>Green Valley Plots</h5>
+                                <p>Drone Aerial View</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-btn" onclick="openLightbox('assets/images/gallery/aerial-1.jpg', 'Green Valley Plots - Aerial View')">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="shareImage('Green Valley Plots - Aerial View')">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="downloadImage('assets/images/gallery/aerial-1.jpg')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="360" data-project="green-valley">
+                    <div class="gallery-card virtual-tour-card">
+                        <img src="assets/images/gallery/360-thumb-1.jpg" alt="Green Valley Plots - 360 Tour" class="gallery-image">
+                        <div class="tour-360-btn" onclick="open360Tour('green-valley-tour')">
+                            <i class="fas fa-globe"></i>
+                            <span>360°</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>Green Valley Plots</h5>
+                                <p>Virtual 360° Tour</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-btn" onclick="open360Tour('green-valley-tour')">
+                                    <i class="fas fa-globe"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="shareTour('Green Valley Plots - 360 Tour')">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sunrise Enclave Photos -->
+                <div class="gallery-item" data-type="photos" data-project="sunrise-enclave">
+                    <div class="gallery-card">
+                        <img src="assets/images/gallery/project2-1.jpg" alt="Sunrise Enclave - Swimming Pool" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>Sunrise Enclave</h5>
+                                <p>Swimming Pool Complex</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-btn" onclick="openLightbox('assets/images/gallery/project2-1.jpg', 'Sunrise Enclave - Swimming Pool')">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="shareImage('Sunrise Enclave - Swimming Pool')">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="downloadImage('assets/images/gallery/project2-1.jpg')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="photos" data-project="sunrise-enclave">
+                    <div class="gallery-card">
+                        <img src="assets/images/gallery/project2-2.jpg" alt="Sunrise Enclave - Garden Area" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>Sunrise Enclave</h5>
+                                <p>Landscaped Garden</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-btn" onclick="openLightbox('assets/images/gallery/project2-2.jpg', 'Sunrise Enclave - Garden Area')">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="shareImage('Sunrise Enclave - Garden Area')">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="downloadImage('assets/images/gallery/project2-2.jpg')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="videos" data-project="sunrise-enclave">
+                    <div class="gallery-card video-card">
+                        <img src="assets/images/gallery/video-thumb-2.jpg" alt="Sunrise Enclave - Construction Progress" class="gallery-image">
+                        <div class="video-play-btn" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="dQw4w9WgXcQ">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>Sunrise Enclave</h5>
+                                <p>Construction Progress</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-btn" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="dQw4w9WgXcQ">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="shareVideo('Sunrise Enclave - Construction Progress')">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Golden Hills Photos -->
+                <div class="gallery-item" data-type="photos" data-project="golden-hills">
+                    <div class="gallery-card">
+                        <img src="assets/images/gallery/project3-1.jpg" alt="Golden Hills - Infrastructure" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>Golden Hills</h5>
+                                <p>Road Infrastructure</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-btn" onclick="openLightbox('assets/images/gallery/project3-1.jpg', 'Golden Hills - Infrastructure')">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="shareImage('Golden Hills - Infrastructure')">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="downloadImage('assets/images/gallery/project3-1.jpg')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="aerial" data-project="golden-hills">
+                    <div class="gallery-card">
+                        <img src="assets/images/gallery/aerial-2.jpg" alt="Golden Hills - Aerial Layout" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>Golden Hills</h5>
+                                <p>Complete Layout View</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-btn" onclick="openLightbox('assets/images/gallery/aerial-2.jpg', 'Golden Hills - Aerial Layout')">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="shareImage('Golden Hills - Aerial Layout')">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="downloadImage('assets/images/gallery/aerial-2.jpg')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tech Valley Photos -->
+                <div class="gallery-item" data-type="photos" data-project="tech-valley">
+                    <div class="gallery-card">
+                        <img src="assets/images/gallery/project4-1.jpg" alt="Tech Valley - Community Center" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>Tech Valley Plots</h5>
+                                <p>Community Center</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-btn" onclick="openLightbox('assets/images/gallery/project4-1.jpg', 'Tech Valley - Community Center')">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="shareImage('Tech Valley - Community Center')">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="downloadImage('assets/images/gallery/project4-1.jpg')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="360" data-project="tech-valley">
+                    <div class="gallery-card virtual-tour-card">
+                        <img src="assets/images/gallery/360-thumb-2.jpg" alt="Tech Valley - 360 Tour" class="gallery-image">
+                        <div class="tour-360-btn" onclick="open360Tour('tech-valley-tour')">
+                            <i class="fas fa-globe"></i>
+                            <span>360°</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>Tech Valley Plots</h5>
+                                <p>Virtual Site Tour</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-btn" onclick="open360Tour('tech-valley-tour')">
+                                    <i class="fas fa-globe"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="shareTour('Tech Valley - 360 Tour')">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paradise Gardens Photos -->
+                <div class="gallery-item" data-type="photos" data-project="paradise-gardens">
+                    <div class="gallery-card">
+                        <img src="assets/images/gallery/project5-1.jpg" alt="Paradise Gardens - Water Features" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>Paradise Gardens</h5>
+                                <p>Water Features</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-btn" onclick="openLightbox('assets/images/gallery/project5-1.jpg', 'Paradise Gardens - Water Features')">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="shareImage('Paradise Gardens - Water Features')">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="downloadImage('assets/images/gallery/project5-1.jpg')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="videos" data-project="paradise-gardens">
+                    <div class="gallery-card video-card">
+                        <img src="assets/images/gallery/video-thumb-3.jpg" alt="Paradise Gardens - Amenities Tour" class="gallery-image">
+                        <div class="video-play-btn" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="dQw4w9WgXcQ">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>Paradise Gardens</h5>
+                                <p>Amenities Tour</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-btn" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="dQw4w9WgXcQ">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="shareVideo('Paradise Gardens - Amenities Tour')">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Royal Estate Photos -->
+                <div class="gallery-item" data-type="photos" data-project="royal-estate">
+                    <div class="gallery-card">
+                        <img src="assets/images/gallery/project6-1.jpg" alt="Royal Estate - Entrance Plaza" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>Royal Estate</h5>
+                                <p>Grand Entrance Plaza</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-btn" onclick="openLightbox('assets/images/gallery/project6-1.jpg', 'Royal Estate - Entrance Plaza')">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="shareImage('Royal Estate - Entrance Plaza')">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="downloadImage('assets/images/gallery/project6-1.jpg')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="aerial" data-project="royal-estate">
+                    <div class="gallery-card">
+                        <img src="assets/images/gallery/aerial-3.jpg" alt="Royal Estate - Aerial Perspective" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>Royal Estate</h5>
+                                <p>Bird's Eye View</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-btn" onclick="openLightbox('assets/images/gallery/aerial-3.jpg', 'Royal Estate - Aerial Perspective')">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="shareImage('Royal Estate - Aerial Perspective')">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                                <button class="gallery-btn" onclick="downloadImage('assets/images/gallery/aerial-3.jpg')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-5">
+                <button class="btn btn-outline-primary btn-lg" id="loadMoreGallery">
+                    <i class="fas fa-plus"></i> Load More Media
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Tours Section -->
+    <section class="virtual-tours py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Virtual <span class="text-accent">Tours</span></h2>
+                <p class="section-subtitle">Experience our projects from anywhere in the world</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="virtual-tour-card-large">
+                        <img src="assets/images/gallery/virtual-tour-1.jpg" alt="Green Valley Virtual Tour" class="tour-image">
+                        <div class="tour-overlay">
+                            <div class="tour-info">
+                                <h4>Green Valley Plots</h4>
+                                <p>Complete project walkthrough with amenities</p>
+                                <button class="btn btn-light" onclick="open360Tour('green-valley-full-tour')">
+                                    <i class="fas fa-globe"></i> Start Tour
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="virtual-tour-card-large">
+                        <img src="assets/images/gallery/virtual-tour-2.jpg" alt="Sunrise Enclave Virtual Tour" class="tour-image">
+                        <div class="tour-overlay">
+                            <div class="tour-info">
+                                <h4>Sunrise Enclave</h4>
+                                <p>Interactive 360° site exploration</p>
+                                <button class="btn btn-light" onclick="open360Tour('sunrise-enclave-full-tour')">
+                                    <i class="fas fa-globe"></i> Start Tour
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="virtual-tour-card-large">
+                        <img src="assets/images/gallery/virtual-tour-3.jpg" alt="Golden Hills Virtual Tour" class="tour-image">
+                        <div class="tour-overlay">
+                            <div class="tour-info">
+                                <h4>Golden Hills</h4>
+                                <p>Immersive project experience</p>
+                                <button class="btn btn-light" onclick="open360Tour('golden-hills-full-tour')">
+                                    <i class="fas fa-globe"></i> Start Tour
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h3 class="cta-title">Inspired by What You See?</h3>
+                    <p class="cta-subtitle">Schedule a site visit to experience our premium developments in person.</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <button class="btn btn-primary btn-lg me-3" data-bs-toggle="modal" data-bs-target="#siteVisitModal">
+                        <i class="fas fa-calendar"></i> Schedule Visit
+                    </button>
+                    <button class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                        Enquire Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-brand">
+                        <img src="assets/images/logo-white.png" alt="KK Projects" height="60" class="mb-3">
+                        <p>Building tomorrow's premium communities with smart land investments for future-ready developments.</p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Land Development</a></li>
+                        <li><a href="#">Plotted Ventures</a></li>
+                        <li><a href="#">NRI Services</a></li>
+                        <li><a href="#">Investment Consulting</a></li>
+                        <li><a href="#">Legal Assistance</a></li>
+                        <li><a href="#">RERA Compliance</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Plot No. 123, Jubilee Hills, Hyderabad - 500033</p>
+                        <p><i class="fas fa-phone"></i> +91 99999 99999</p>
+                        <p><i class="fas fa-envelope"></i> info@kkprojects.com</p>
+                        <p><i class="fas fa-clock"></i> Mon - Sat: 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="footer-copyright">&copy; 2024 KK Projects. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <div class="footer-legal">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms-conditions.html">Terms & Conditions</a>
+                        <a href="rera-compliance.html">RERA Compliance</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Lightbox Modal -->
+    <div class="modal fade" id="lightboxModal" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-white" id="lightboxTitle"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="lightboxImage" src="" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalTitle">Project Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe id="videoFrame" src="" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enquiry Modal -->
+    <div class="modal fade" id="enquiryModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Enquire Now</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="enquiryForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Full Name *</label>
+                                <input type="text" class="form-control" name="fullName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Phone Number *</label>
+                                <input type="tel" class="form-control" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" name="email" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Budget Range</label>
+                                <select class="form-control" name="budget">
+                                    <option value="">Select Budget</option>
+                                    <option value="0-20">₹0 - ₹20 Lakhs</option>
+                                    <option value="20-40">₹20 - ₹40 Lakhs</option>
+                                    <option value="40-60">₹40 - ₹60 Lakhs</option>
+                                    <option value="60-100">₹60 Lakhs - ₹1 Crore</option>
+                                    <option value="100+">Above ₹1 Crore</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Preferred Location</label>
+                            <select class="form-control" name="location">
+                                <option value="">Select Location</option>
+                                <option value="shadnagar">Shadnagar</option>
+                                <option value="kompally">Kompally</option>
+                                <option value="shankarpally">Shankarpally</option>
+                                <option value="tukkuguda">Tukkuguda</option>
+                                <option value="maheshwaram">Maheshwaram</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" name="message" rows="3" placeholder="Tell us about your requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">
+                            <i class="fas fa-paper-plane"></i> Send Enquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Site Visit Modal -->
+    <div class="modal fade" id="siteVisitModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Schedule Site Visit</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="siteVisitForm">
+                        <div class="mb-3">
+                            <label class="form-label">Full Name *</label>
+                            <input type="text" class="form-control" name="fullName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phone Number *</label>
+                            <input type="tel" class="form-control" name="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email Address *</label>
+                            <input type="email" class="form-control" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Project Interest</label>
+                            <select class="form-control" name="project">
+                                <option value="">Select Project</option>
+                                <option value="green-valley">Green Valley Plots</option>
+                                <option value="sunrise-enclave">Sunrise Enclave</option>
+                                <option value="golden-hills">Golden Hills</option>
+                                <option value="tech-valley">Tech Valley Plots</option>
+                                <option value="paradise-gardens">Paradise Gardens</option>
+                                <option value="royal-estate">Royal Estate</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Preferred Date *</label>
+                            <input type="date" class="form-control" name="visitDate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Preferred Time</label>
+                            <select class="form-control" name="visitTime">
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">
+                            <i class="fas fa-calendar"></i> Schedule Visit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        // Gallery specific JavaScript
+        $(document).ready(function() {
+            // Gallery filtering
+            $('.filter-btn').click(function() {
+                var filter = $(this).data('filter');
+                
+                $('.filter-btn').removeClass('active');
+                $(this).addClass('active');
+                
+                if (filter === 'all') {
+                    $('.gallery-item').fadeIn(500);
+                } else {
+                    $('.gallery-item').hide();
+                    $('.gallery-item[data-type="' + filter + '"]').fadeIn(500);
+                }
+            });
+
+            // Project filtering
+            $('#projectFilter').change(function() {
+                var project = $(this).val();
+                
+                if (project === '') {
+                    $('.gallery-item').fadeIn(500);
+                } else {
+                    $('.gallery-item').hide();
+                    $('.gallery-item[data-project="' + project + '"]').fadeIn(500);
+                }
+            });
+
+            // Video modal handling
+            $('[data-bs-target="#videoModal"]').click(function() {
+                var videoId = $(this).data('video');
+                $('#videoFrame').attr('src', 'https://www.youtube.com/embed/' + videoId);
+            });
+
+            $('#videoModal').on('hidden.bs.modal', function() {
+                $('#videoFrame').attr('src', '');
+            });
+
+            // Load more gallery items
+            $('#loadMoreGallery').click(function() {
+                $(this).text('Loading...').prop('disabled', true);
+                
+                // Simulate loading more items
+                setTimeout(function() {
+                    $('#loadMoreGallery').text('No More Items').prop('disabled', true);
+                }, 1500);
+            });
+        });
+
+        // Lightbox functionality
+        function openLightbox(imageSrc, title) {
+            $('#lightboxImage').attr('src', imageSrc);
+            $('#lightboxTitle').text(title);
+            $('#lightboxModal').modal('show');
+        }
+
+        // Share functionality
+        function shareImage(title) {
+            if (navigator.share) {
+                navigator.share({
+                    title: title,
+                    url: window.location.href
+                });
+            } else {
+                // Fallback for browsers that don't support Web Share API
+                var shareUrl = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(title + ' - KK Projects') + '&url=' + encodeURIComponent(window.location.href);
+                window.open(shareUrl, '_blank');
+            }
+        }
+
+        function shareVideo(title) {
+            shareImage(title);
+        }
+
+        function shareTour(title) {
+            shareImage(title);
+        }
+
+        // Download functionality
+        function downloadImage(imageSrc) {
+            var link = document.createElement('a');
+            link.href = imageSrc;
+            link.download = imageSrc.split('/').pop();
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // 360 Tour functionality
+        function open360Tour(tourId) {
+            // This would typically open a 360° tour viewer
+            // For demo purposes, we'll show an alert
+            showNotification('Opening 360° Virtual Tour for ' + tourId.replace('-', ' ').toUpperCase(), 'info');
+            
+            // In a real implementation, this might open:
+            // window.open('virtual-tours/' + tourId + '.html', '_blank');
+        }
+    </script>
+</body>
+</html>
